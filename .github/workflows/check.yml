@@ -16,7 +16,7 @@ jobs:
       - name: Set up CMake
         uses: lukka/get-cmake@latest
         with:
-          cmakeVersion: ""~3.25.0"
+          cmakeVersion: "~3.25.0"
 
       - name: Install dependencies
         run: sudo apt-get update && sudo apt-get install -y g++
