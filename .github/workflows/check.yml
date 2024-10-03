@@ -22,10 +22,10 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y g++
 
       - name: Configure CMake
-        run: cmake -S . -B build
+        run: cmake -DBUILD_TESTING=ON -S . -B build
 
       - name: Build
-        run: cmake --build build -DBUILD_TESTING=ON
+        run: cmake --build build
 
       - name: Run tests
         run: ctest --test-dir build
