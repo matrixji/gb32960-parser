@@ -4,7 +4,7 @@ ENABLE_TESTING()
 set(USE_GTEST_FROM "auto" CACHE STRING "Select GTest installation method")
 set_property(CACHE USE_GTEST_FROM PROPERTY STRINGS "auto" "system" "source")
 
-set(GTEST_DOWNLOAD_URL "https://github.com/google/googletest/archive/release-1.15.2.tar.gz"
+set(GTEST_DOWNLOAD_URL "https://github.com/google/googletest/releases/download/v1.15.2/googletest-1.15.2.tar.gz"
         CACHE STRING "GTest download URL")
 
 
